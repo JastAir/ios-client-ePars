@@ -21,6 +21,7 @@
 		D069FD4C2225BC0A00FF6CB0 /* LoginViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D069FD4B2225BC0A00FF6CB0 /* LoginViewProtocol.swift */; };
 		D069FD502225C6E500FF6CB0 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D069FD4F2225C6E500FF6CB0 /* UIButtonExtension.swift */; };
 		D069FD522225C99100FF6CB0 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D069FD512225C99100FF6CB0 /* UITextFieldExtension.swift */; };
+		D069FD542225CEDC00FF6CB0 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D069FD532225CEDC00FF6CB0 /* UILabelExtension.swift */; };
 		D0C0AE1D22258F110081A874 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C0AE1C22258F110081A874 /* AppDelegate.swift */; };
 		D0C0AE1F22258F110081A874 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C0AE1E22258F110081A874 /* LoginViewController.swift */; };
 		D0C0AE2222258F110081A874 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C0AE2022258F110081A874 /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 		D069FD4B2225BC0A00FF6CB0 /* LoginViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewProtocol.swift; sourceTree = "<group>"; };
 		D069FD4F2225C6E500FF6CB0 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		D069FD512225C99100FF6CB0 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		D069FD532225CEDC00FF6CB0 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		D0C0AE1922258F110081A874 /* ePars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ePars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C0AE1C22258F110081A874 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0C0AE1E22258F110081A874 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				D069FD2D222590B800FF6CB0 /* UIViewControllerExtension.swift */,
 				D069FD4F2225C6E500FF6CB0 /* UIButtonExtension.swift */,
 				D069FD512225C99100FF6CB0 /* UITextFieldExtension.swift */,
+				D069FD532225CEDC00FF6CB0 /* UILabelExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -150,6 +153,13 @@
 			children = (
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		D069FD552225E5A200FF6CB0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		D0C0AE1022258F110081A874 = {
@@ -173,6 +183,7 @@
 		D0C0AE1B22258F110081A874 /* ePars */ = {
 			isa = PBXGroup;
 			children = (
+				D069FD552225E5A200FF6CB0 /* Network */,
 				D069FD4E2225C65500FF6CB0 /* UI */,
 				D069FD4D2225C5EA00FF6CB0 /* Extension */,
 				D069FD2C2225909900FF6CB0 /* Base */,
@@ -320,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D069FD542225CEDC00FF6CB0 /* UILabelExtension.swift in Sources */,
 				D069FD322225AABF00FF6CB0 /* LoginPresenter.swift in Sources */,
 				D069FD432225ACDC00FF6CB0 /* LoginModel.swift in Sources */,
 				D069FD362225AB7B00FF6CB0 /* BasePresenterProtocol.swift in Sources */,

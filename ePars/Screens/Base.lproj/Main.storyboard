@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qON-hu-Tdg">
-                                <rect key="frame" x="64" y="394.5" width="286" height="107"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="qON-hu-Tdg">
+                                <rect key="frame" x="64" y="342.5" width="286" height="211"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="string" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DUH-wR-E5x">
                                         <rect key="frame" x="0.0" y="0.0" width="286" height="30"/>
@@ -29,15 +28,15 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="string" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hLR-pZ-zTz">
-                                        <rect key="frame" x="0.0" y="38" width="286" height="30"/>
+                                        <rect key="frame" x="0.0" y="60" width="286" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="iM7-y5-VFv">
-                                        <rect key="frame" x="0.0" y="76" width="286" height="31"/>
+                                        <rect key="frame" x="0.0" y="120" width="286" height="31"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember me" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fm0-N9-GNx">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember me" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fm0-N9-GNx">
                                                 <rect key="frame" x="0.0" y="0.0" width="233" height="31"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -48,32 +47,32 @@
                                             </switch>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVe-4f-HAQ">
+                                        <rect key="frame" x="0.0" y="181" width="286" height="30"/>
+                                        <state key="normal" title="Sign in"/>
+                                        <connections>
+                                            <action selector="signInAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uNh-7c-jeL"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="aVe-4f-HAQ" secondAttribute="trailing" id="8va-mn-pf1"/>
                                     <constraint firstAttribute="trailing" secondItem="DUH-wR-E5x" secondAttribute="trailing" id="F7l-Td-Am0"/>
                                     <constraint firstItem="iM7-y5-VFv" firstAttribute="leading" secondItem="qON-hu-Tdg" secondAttribute="leading" id="SOe-Zf-qEq"/>
                                     <constraint firstAttribute="trailing" secondItem="iM7-y5-VFv" secondAttribute="trailing" id="U5i-Ai-S01"/>
                                     <constraint firstItem="hLR-pZ-zTz" firstAttribute="leading" secondItem="qON-hu-Tdg" secondAttribute="leading" id="Ve2-mY-t7y"/>
                                     <constraint firstAttribute="trailing" secondItem="hLR-pZ-zTz" secondAttribute="trailing" id="gQZ-u2-zfT"/>
                                     <constraint firstItem="DUH-wR-E5x" firstAttribute="leading" secondItem="qON-hu-Tdg" secondAttribute="leading" id="jh7-5G-4Y8"/>
+                                    <constraint firstItem="aVe-4f-HAQ" firstAttribute="leading" secondItem="qON-hu-Tdg" secondAttribute="leading" id="xs0-AS-aAh"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVe-4f-HAQ">
-                                <rect key="frame" x="183.5" y="517.5" width="47" height="30"/>
-                                <state key="normal" title="Sign in"/>
-                                <connections>
-                                    <action selector="signInAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uNh-7c-jeL"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qON-hu-Tdg" secondAttribute="trailing" constant="64" id="43e-Jc-vk3"/>
                             <constraint firstItem="qON-hu-Tdg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="6fx-LV-zZm"/>
                             <constraint firstItem="qON-hu-Tdg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CrY-fA-KDN"/>
-                            <constraint firstItem="aVe-4f-HAQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KT3-pH-deF"/>
                             <constraint firstItem="qON-hu-Tdg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="e7p-5t-n8o"/>
-                            <constraint firstItem="aVe-4f-HAQ" firstAttribute="top" secondItem="qON-hu-Tdg" secondAttribute="bottom" constant="16" id="mLQ-T5-tDB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
