@@ -22,6 +22,12 @@
 		D069FD502225C6E500FF6CB0 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D069FD4F2225C6E500FF6CB0 /* UIButtonExtension.swift */; };
 		D069FD522225C99100FF6CB0 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D069FD512225C99100FF6CB0 /* UITextFieldExtension.swift */; };
 		D069FD542225CEDC00FF6CB0 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D069FD532225CEDC00FF6CB0 /* UILabelExtension.swift */; };
+		D069FD572225E91200FF6CB0 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D069FD562225E91200FF6CB0 /* Networking.swift */; };
+		D069FD592225E9A100FF6CB0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D069FD582225E9A100FF6CB0 /* NetworkService.swift */; };
+		D069FD5C2225EB9900FF6CB0 /* AuthorizeFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D069FD5B2225EB9900FF6CB0 /* AuthorizeFormModel.swift */; };
+		D069FD5E2225EBF000FF6CB0 /* ServiceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D069FD5D2225EBF000FF6CB0 /* ServiceResult.swift */; };
+		D069FD612225EC3000FF6CB0 /* ServiceResultStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D069FD602225EC3000FF6CB0 /* ServiceResultStatus.swift */; };
+		D069FD632225ECA200FF6CB0 /* CompleteToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = D069FD622225ECA200FF6CB0 /* CompleteToken.swift */; };
 		D0C0AE1D22258F110081A874 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C0AE1C22258F110081A874 /* AppDelegate.swift */; };
 		D0C0AE1F22258F110081A874 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C0AE1E22258F110081A874 /* LoginViewController.swift */; };
 		D0C0AE2222258F110081A874 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C0AE2022258F110081A874 /* Main.storyboard */; };
@@ -47,6 +53,12 @@
 		D069FD4F2225C6E500FF6CB0 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		D069FD512225C99100FF6CB0 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		D069FD532225CEDC00FF6CB0 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		D069FD562225E91200FF6CB0 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		D069FD582225E9A100FF6CB0 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		D069FD5B2225EB9900FF6CB0 /* AuthorizeFormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizeFormModel.swift; sourceTree = "<group>"; };
+		D069FD5D2225EBF000FF6CB0 /* ServiceResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceResult.swift; sourceTree = "<group>"; };
+		D069FD602225EC3000FF6CB0 /* ServiceResultStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceResultStatus.swift; sourceTree = "<group>"; };
+		D069FD622225ECA200FF6CB0 /* CompleteToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteToken.swift; sourceTree = "<group>"; };
 		D0C0AE1922258F110081A874 /* ePars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ePars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C0AE1C22258F110081A874 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0C0AE1E22258F110081A874 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -78,13 +90,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D069FD292225903500FF6CB0 /* Screens */ = {
+		D069FD292225903500FF6CB0 /* UI */ = {
 			isa = PBXGroup;
 			children = (
 				D069FD2B2225906F00FF6CB0 /* Login */,
 				D0C0AE2022258F110081A874 /* Main.storyboard */,
 				D0C0AE2822258F130081A874 /* LaunchScreen.storyboard */,
 			);
+			name = UI;
 			path = Screens;
 			sourceTree = "<group>";
 		};
@@ -148,18 +161,32 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		D069FD4E2225C65500FF6CB0 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
 		D069FD552225E5A200FF6CB0 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				D069FD562225E91200FF6CB0 /* Networking.swift */,
+				D069FD582225E9A100FF6CB0 /* NetworkService.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		D069FD5A2225EB7900FF6CB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D069FD5F2225EC1D00FF6CB0 /* enum */,
+				D069FD5B2225EB9900FF6CB0 /* AuthorizeFormModel.swift */,
+				D069FD5D2225EBF000FF6CB0 /* ServiceResult.swift */,
+				D069FD622225ECA200FF6CB0 /* CompleteToken.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D069FD5F2225EC1D00FF6CB0 /* enum */ = {
+			isa = PBXGroup;
+			children = (
+				D069FD602225EC3000FF6CB0 /* ServiceResultStatus.swift */,
+			);
+			path = enum;
 			sourceTree = "<group>";
 		};
 		D0C0AE1022258F110081A874 = {
@@ -183,11 +210,11 @@
 		D0C0AE1B22258F110081A874 /* ePars */ = {
 			isa = PBXGroup;
 			children = (
-				D069FD552225E5A200FF6CB0 /* Network */,
-				D069FD4E2225C65500FF6CB0 /* UI */,
-				D069FD4D2225C5EA00FF6CB0 /* Extension */,
 				D069FD2C2225909900FF6CB0 /* Base */,
-				D069FD292225903500FF6CB0 /* Screens */,
+				D069FD4D2225C5EA00FF6CB0 /* Extension */,
+				D069FD552225E5A200FF6CB0 /* Network */,
+				D069FD5A2225EB7900FF6CB0 /* Model */,
+				D069FD292225903500FF6CB0 /* UI */,
 				D0C0AE1C22258F110081A874 /* AppDelegate.swift */,
 				D0C0AE2622258F120081A874 /* Assets.xcassets */,
 				D0C0AE2B22258F130081A874 /* Info.plist */,
@@ -333,7 +360,9 @@
 			files = (
 				D069FD542225CEDC00FF6CB0 /* UILabelExtension.swift in Sources */,
 				D069FD322225AABF00FF6CB0 /* LoginPresenter.swift in Sources */,
+				D069FD5E2225EBF000FF6CB0 /* ServiceResult.swift in Sources */,
 				D069FD432225ACDC00FF6CB0 /* LoginModel.swift in Sources */,
+				D069FD572225E91200FF6CB0 /* Networking.swift in Sources */,
 				D069FD362225AB7B00FF6CB0 /* BasePresenterProtocol.swift in Sources */,
 				D0C0AE1F22258F110081A874 /* LoginViewController.swift in Sources */,
 				D069FD2E222590B800FF6CB0 /* UIViewControllerExtension.swift in Sources */,
@@ -343,8 +372,12 @@
 				D0C0AE1D22258F110081A874 /* AppDelegate.swift in Sources */,
 				D069FD522225C99100FF6CB0 /* UITextFieldExtension.swift in Sources */,
 				D069FD4C2225BC0A00FF6CB0 /* LoginViewProtocol.swift in Sources */,
+				D069FD612225EC3000FF6CB0 /* ServiceResultStatus.swift in Sources */,
 				D0C0AE2522258F110081A874 /* ePars.xcdatamodeld in Sources */,
 				D069FD502225C6E500FF6CB0 /* UIButtonExtension.swift in Sources */,
+				D069FD5C2225EB9900FF6CB0 /* AuthorizeFormModel.swift in Sources */,
+				D069FD592225E9A100FF6CB0 /* NetworkService.swift in Sources */,
+				D069FD632225ECA200FF6CB0 /* CompleteToken.swift in Sources */,
 				D069FD472225B0E100FF6CB0 /* LoginAuthResultStatus.swift in Sources */,
 				D069FD3A2225ABD400FF6CB0 /* BaseModelProtocol.swift in Sources */,
 				D069FD342225AAE700FF6CB0 /* LoginPresenterProtocol.swift in Sources */,
