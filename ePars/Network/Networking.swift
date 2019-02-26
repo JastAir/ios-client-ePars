@@ -7,8 +7,15 @@
 //
 
 import UIKit
+import Alamofire
 
 class Networking {
 
+	let BASE_URL = "http://e-pars.net/api/v1/"
 	
+	func authorizationPost(){
+		Alamofire.request("\(BASE_URL)Common/Authorization").responseData(completionHandler: { responce in
+			// todo - impl responce handler for save to coreData and when its send to model
+		})
+	}
 }
